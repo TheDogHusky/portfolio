@@ -12,9 +12,14 @@
   "dependencies": {
     "@nuxt/image": "^1.8.1",
     "aos": "^2.3.4",
+    "nodemailer": "^6.9.16",
     "nuxt": "^3.14.159",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "zod": "^3.23.8"
   },
-  "packageManager": "yarn@1.22.22"
+  "packageManager": "yarn@1.22.22",
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.16"
+  }
 }

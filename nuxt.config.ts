@@ -7,4 +7,8 @@ export default defineNuxtConfig({
     plugins: [
         { src: '~/plugins/aos.client', mode: 'client' }
     ],
+    runtimeConfig: {
+        mailUser: '',
+        mailPassword: ''
+    }
 });
