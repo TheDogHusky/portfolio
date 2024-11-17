@@ -44,22 +44,10 @@ const resize = (event: Event) => {
     textarea.style.height = 'auto';
     textarea.style.height = textarea.scrollHeight + 'px';
 };
-
-const form = ref<HTMLFormElement | null>(null);
-
-onMounted(() => {
-    form.value?.addEventListener('submit', submitForm);
-    form.value?.addEventListener('input', validateForm);
-});
-
-onUnmounted(() => {
-    form.value?.removeEventListener('submit', submitForm);
-    form.value?.removeEventListener('input', validateForm);
-});
 </script>
 
 <template>
-    <form ref="form" class="contact-form">
+    <form @input="validateForm" @submit.prevent="submitForm" class="contact-form">
         <div class="form-field">
             <label for="name">Name</label>
             <input placeholder="Adam Billard" type="text" id="name" name="name" required min="2" max="50" />

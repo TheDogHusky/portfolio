@@ -1,11 +1,6 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-
+    <header>
+        <nav class="navbar">
+        </nav>
+    </header>
 </template>
-
-<style scoped>
-
-</style>
