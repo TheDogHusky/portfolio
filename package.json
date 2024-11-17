@@ -16,6 +16,7 @@
     "nuxt": "^3.14.159",
     "vue": "latest",
     "vue-router": "latest",
+    "xss": "^1.0.15",
     "zod": "^3.23.8"
   },
   "packageManager": "yarn@1.22.22",
