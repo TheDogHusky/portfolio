@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     compatibilityDate: '2024-04-03',
     devtools: { enabled: false },
-    modules: ['@nuxt/image'],
+    modules: ['@nuxt/image', 'nuxt-toastify'],
     css: ['~/assets/css/main.css'],
     plugins: [
         { src: '~/plugins/aos.client', mode: 'client' }
@@ -10,5 +10,10 @@ export default defineNuxtConfig({
     runtimeConfig: {
         mailUser: '',
         mailPassword: ''
+    },
+    toastify: {
+        autoClose: 2000,
+        position: 'top-right',
+        theme: 'auto',
     }
 });

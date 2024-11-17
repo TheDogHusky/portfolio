@@ -63,7 +63,7 @@ const projects = [
 
 <template>
     <main class="container child-extend px-4">
-        <NuxtImg alt="logo" format="webp" src="/logo.webp" height="720" width="720" class="main-logo" />
+        <NuxtImg data-aos="fade-down" alt="logo" format="webp" src="/logo.webp" height="720" width="720" class="main-logo" />
         <div class="main-header">
             <h1 data-aos="fade-right">Hey, I'm <span class="title-special">Adam</span>.</h1>
             <Socials data-aos="fade-up" place="header" />
@@ -71,7 +71,7 @@ const projects = [
         <ScrollButton scrollTarget="about" />
     </main>
     <section id="about" class="container bg-darker gap-3 px-4">
-        <h2 data-aos="fade-right">About me</h2>
+        <h2 data-aos="fade-left">About <span class="title-special">me</span></h2>
         <p class="about-p" data-aos="fade-up">I'm a full-stack 16 years old developer from France. I'm passionate about web development and I love to create beautiful and efficient websites.</p>
     </section>
     <section class="container gap-3 p-4" id="projects">
@@ -91,7 +91,12 @@ const projects = [
             </li>
         </ul>
     </section>
-    <section class="container gap-3 p-4 bg-darker" id="contact">
+    <section class="container gap-3 p-4 bg-darker" id="experience">
+        <h2 data-aos="fade-left">Experience</h2>
+        <ExperienceResume />
+    </section>
+    <section class="container gap-3 p-4" id="contact">
         <h2 data-aos="fade-right">Contact</h2>
+        <ContactForm data-aos="fade-right" />
     </section>
 </template>

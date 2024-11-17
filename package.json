@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -14,6 +14,7 @@
     "aos": "^2.3.4",
     "nodemailer": "^6.9.16",
     "nuxt": "^3.14.159",
+    "nuxt-toastify": "^1.0.0",
     "vue": "latest",
     "vue-router": "latest",
     "xss": "^1.0.15",
