@@ -1,4 +1,5 @@
 <template>
+    <!-- TODO fix the fact that when the animation is not done yet (aos), the container is too big and overflows on the x axis -->
     <div class="experience-resume">
         <div data-aos="fade-right" class="experience">
             <h3>Paul-Emile-Victor primary school</h3>
