@@ -8,8 +8,8 @@ export default defineNuxtConfig({
         { src: '~/plugins/aos.client', mode: 'client' }
     ],
     runtimeConfig: {
-        mailUser: '',
-        mailPassword: ''
+        mailUser: process.env.NUXT_MAIL_USER ?? '',
+        mailPassword: process.env.NUXT_MAIL_PASSWORD ?? ''
     },
     toastify: {
         autoClose: 2000,

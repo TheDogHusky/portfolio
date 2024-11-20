@@ -18,14 +18,20 @@ const submitForm = async (event: Event) => {
     if (!res) {
         useToastify.update(loadingToast, {
             type: 'error',
-            render: 'An error occurred while sending the message. Please try again later.'
+            render: 'An error occurred while sending the message. Please try again later.',
+            autoClose: true,
+            closeOnClick: true,
+            isLoading: false
         });
         return;
     }
 
     useToastify.update(loadingToast, {
         type: 'success',
-        render: 'Message sent successfully!'
+        render: 'Message sent successfully!',
+        autoClose: true,
+        closeOnClick: true,
+        isLoading: false
     });
     form.reset();
 };
