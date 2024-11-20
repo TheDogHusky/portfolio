@@ -62,7 +62,7 @@ const projects = [
 </script>
 
 <template>
-    <main class="container child-extend px-4">
+    <main class="container child-extend px-4" id="home">
         <NuxtImg data-aos="fade-down" alt="logo" format="webp" src="/logo.webp" height="720" width="720" class="main-logo" />
         <div class="main-header">
             <h1 data-aos="fade-right">Hey, I'm <span class="title-special">Adam</span>.</h1>
@@ -75,7 +75,7 @@ const projects = [
         <p class="about-p" data-aos="fade-up">I'm a full-stack 16 years old developer from France. I'm passionate about web development and I love to create beautiful and efficient websites.</p>
     </section>
     <section class="container gap-3 p-4" id="projects">
-        <h2 data-aos="fade-right">Projects</h2>
+        <h2 data-aos="fade-right">My <span class="title-special">projects</span></h2>
         <ul class="projects">
             <li v-for="project in projects" :key="project.name" class="project" data-aos="fade-up">
                 <h3>{{ project.name }}</h3>
@@ -92,11 +92,11 @@ const projects = [
         </ul>
     </section>
     <section class="container gap-3 p-4 bg-darker" id="experience">
-        <h2 data-aos="fade-left">Experience</h2>
+        <h2 data-aos="fade-left">My <span class="title-special">experience</span></h2>
         <ExperienceResume />
     </section>
     <section class="container gap-3 p-4" id="contact">
-        <h2 data-aos="fade-right">Contact</h2>
+        <h2 data-aos="fade-right">Contact <span class="title-special">me</span></h2>
         <ContactForm data-aos="fade-right" />
     </section>
 </template>
