@@ -65,7 +65,7 @@ const projects = [
     <main class="container child-extend px-4" id="home">
         <NuxtImg data-aos="fade-down" alt="logo" format="webp" src="/logo.webp" height="720" width="720" class="main-logo" />
         <div class="main-header">
-            <h1 data-aos="fade-right">Hey, I'm <span class="title-special">Adam</span>.</h1>
+            <h1 data-aos="fade-right" class="title">Hey, I'm <span class="title-special">Adam</span>.</h1>
             <Socials data-aos="fade-up" place="header" />
         </div>
         <ScrollButton scrollTarget="about" />

@@ -648,12 +648,12 @@ a:hover {
     text-align: left;
     border-radius: 0.5rem;
     background-color: var(--black-light);
-    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .project:hover {
-    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
     transform: translateY(-10px) !important;
 }
 
@@ -1063,4 +1063,116 @@ footer {
     background-color: var(--dark-darker);
     color: var(--white);
     text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    .navbar-expand-btn {
+        display: none;
+    }
+
+    .navbar-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        max-height: none;
+        width: auto;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .socials-header a {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .about-p {
+        font-size: 1.5rem;
+        max-width: 75%;
+    }
+
+    .projects {
+        gap: 2rem;
+    }
+
+    .experience-resume {
+        width: 75%;
+    }
+
+    .experience, .sub-experience {
+        padding-left: 4rem;
+    }
+
+    .experience h3, .sub-experience h3 {
+        font-size: 1.5rem;
+    }
+
+    .experience p, .sub-experience p {
+        font-size: 1.25rem;
+    }
+
+    .experience::before, .sub-experience::before {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .experience:not(:last-child)::after, .sub-experience:not(:last-child)::after {
+        left: 0.95rem;
+        top: 2rem;
+        height: calc(100% - 0.5rem);
+    }
+
+    .contact-form {
+        width: 75%;
+    }
+
+    .footer-texts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: row;
+    }
+
+    .footer-texts > *:last-child {
+        position: relative;
+    }
+
+    .footer-texts > *:last-child::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -0.5rem;
+        transform: translateY(-50%);
+        display: block;
+        width: 1px;
+        height: 1rem;
+        background-color: var(--white);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .projects {
+        gap: 3rem;
+    }
+
+    .contact-form {
+        width: 50%;
+    }
+
+    .experience-resume {
+        width: 50%;
+    }
+
+    .about-p {
+        max-width: 50%;
+    }
 }
