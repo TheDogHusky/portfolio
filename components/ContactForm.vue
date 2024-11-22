@@ -14,7 +14,16 @@ const submitForm = async (event: Event) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
-    }).catch(() => null);
+    }).catch((err) => {
+        if (err.data.statusCode !== 400) return null;
+        useToastify.update(loadingToast, {
+            type: 'error',
+            render: 'Please fill in all fields correctly.',
+            autoClose: true,
+            closeOnClick: true,
+            isLoading: false
+        });
+    });
     if (!res) {
         useToastify.update(loadingToast, {
             type: 'error',
