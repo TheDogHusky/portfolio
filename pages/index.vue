@@ -72,7 +72,11 @@ const projects = [
     </main>
     <section id="about" class="container bg-darker gap-3 px-4">
         <h2 data-aos="fade-left">About <span class="title-special">me</span></h2>
-        <p class="about-p" data-aos="fade-up">I'm a full-stack 16 years old developer from France. I'm passionate about web development and I love to create beautiful and efficient websites.</p>
+        <p class="about-p" data-aos="fade-up">
+            I'm a full-stack 16 years old developer from France. I started coding when I was 13 with Java, then learned JavaScript with Codecademy, making a Discord Bot (<a href="https://github.com/TheDogHusky/huskybot" rel="noreferrer" target="_blank">HuskyBot</a>). <br/>
+            Then I started making websites with Express and EJS, and now I'm using Nuxt.js and Express. <br/>
+            I'm passionate about web development and I love to create beautiful and efficient websites.
+        </p>
     </section>
     <section class="container gap-3 p-4" id="projects">
         <h2 data-aos="fade-right">My <span class="title-special">projects</span></h2>

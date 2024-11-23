@@ -94,12 +94,15 @@ p {
 
 a {
     color: var(--primary);
-    text-decoration: none;
+    text-decoration: none !important;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 0.25rem;
+    transition: color 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
 }
 
 a:hover {
-    color: var(--primary);
-    text-decoration: underline;
+    color: var(--white);
+    padding-bottom: 0;
 }
 
 /* Utilities */
@@ -602,14 +605,12 @@ a:hover {
 }
 
 .socials a {
-    color: var(--primary);
     font-size: 1.5rem;
-    transition: color 0.3s ease-in-out;
 }
 
-.socials a:hover {
-    color: var(--white);
-    text-decoration: none;
+.socials-header a {
+    border-bottom: none !important;
+    padding: 0 !important;
 }
 
 /* Keyframes */
@@ -678,6 +679,7 @@ a:hover {
     color: var(--primary);
     animation: bounce 2s infinite;
     font-size: 2em;
+    text-decoration: none;
 }
 
 .scroll-button:hover {
@@ -695,7 +697,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem !important;
     border: none;
     border-radius: 0.5rem;
     color: var(--color);
@@ -1044,6 +1046,8 @@ input:-webkit-autofill:active {
     font-weight: 600;
     line-height: 1.5;
     text-decoration: none;
+    padding: 0 !important;
+    border-bottom: none;
     transition: color 0.3s ease-in-out;
 }
 
