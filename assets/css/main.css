@@ -599,9 +599,9 @@ a:hover {
 .socials {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     gap: 1rem;
     flex-direction: row;
+    align-items: flex-start;
 }
 
 .socials a {
