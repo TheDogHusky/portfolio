@@ -1,0 +1,56 @@
+{
+  "title": "Hey, I'm {name}.",
+  "me": "me",
+  "nameLabel": "Name",
+  "emailLabel": "Email",
+  "messageLabel": "Message",
+  "projectsLabel": "projects",
+  "experiencesLabel": "experiences",
+  "send": "Send",
+  "visit": "Visit",
+  "week": "no weeks | one week | {count} weeks",
+  "home": "Home",
+  "about": "About",
+  "contactNav": "Contact",
+  "projectsNav": "Projects",
+  "experiencesNav": "Experiences",
+  "language": "Language",
+  "aboutme": {
+    "title": "About {me}",
+    "about1": "I'm a full-stack 16 years old developer from France. I started coding when I was 13 with Java through with Codecademy, then learned JavaScript, by making a Discord Bot ({huskybotLink}) and by using Codecademy again.",
+    "about2": "Then I started making websites with Express and EJS, and now I'm using Nuxt and Express.",
+    "about3": "I'm passionate about web development and I love to create beautiful and efficient websites."
+  },
+  "projects": {
+    "title": "My {projects}",
+    "portfolioDescription": "My personal portfolio, made with Nuxt.js.",
+    "nekonyaDescription": "An anime-themed website with a few functionalities such as a public API.",
+    "hestiaDescription": "A Discord community that I made a website for.",
+    "nathanDescription": "A website for a friend of mine, to showcase his photographic work."
+  },
+  "experiences": {
+    "title": "My {experiences}",
+    "primarySchool": "Paul-Emile-Victor primary school",
+    "middleSchool": "Martin-Luther-King middle school",
+    "highSchool": "Simone-Veil general high school",
+    "internships": {
+      "orange": "Internship at Orange Business Services",
+      "duros": "Internship at Duros Musique"
+    }
+  },
+  "contact": {
+    "title": "Contact {me}",
+    "me": "me",
+    "contact": "Contact",
+    "success": "Message sent successfully!",
+    "errors": {
+      "general": "An error occurred while sending the message. Please try again later.",
+      "fields": "Please fill in all fields correctly."
+    },
+    "sending": "Sending message..."
+  },
+  "footer": {
+    "left": "© 2024 Adam Billard, all rights reserved.",
+    "right": "Website made with ❤\uFE0F by Adam Billard."
+  }
+}

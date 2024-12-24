@@ -107,6 +107,10 @@ a:hover {
 
 /* Utilities */
 
+.pr {
+    position: relative;
+}
+
 .p-0 {
     padding: 0 !important;
 }
@@ -942,7 +946,7 @@ input:-webkit-autofill:active {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 999;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -1040,7 +1044,7 @@ input:-webkit-autofill:active {
     max-height: 16rem;
 }
 
-.navbar-items a {
+.navbar-items > a {
     color: var(--white);
     font-size: 1rem;
     font-weight: 600;
@@ -1053,6 +1057,61 @@ input:-webkit-autofill:active {
 
 .navbar-items a:hover {
     color: var(--primary);
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    flex-direction: column;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropbtn {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+    margin-bottom: 0.25rem;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    background-color: transparent;
+    border: none;
+}
+
+.dropbtn:hover {
+    color: var(--primary);
+}
+
+.dropdown-item {
+    display: block;
+    border-bottom: none;
+    padding: 0.25rem 1rem !important;
+    color: var(--white);
+    font-size: 1rem;
+    border-left: 3px solid var(--primary);
+    width: 100%;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dropdown-item.active {
+    color: var(--primary);
+}
+
+.dropdown-item:hover {
+    background-color: var(--black-light);
 }
 
 /* Footer */
@@ -1178,5 +1237,38 @@ footer {
 
     .about-p {
         max-width: 50%;
+    }
+
+    .navbar-items {
+        overflow: visible;
+    }
+
+    .dropdown-content:not(.active) {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .dropbtn {
+        margin: 0;
+        padding: 0;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        background-color: var(--black);
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+    }
+
+    .dropdown-item {
+        border: none;
+        padding: 0.5rem 1rem !important;
     }
 }

@@ -11,9 +11,10 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.8.1",
+    "@nuxtjs/i18n": "9.0.0-rc.2",
     "aos": "^2.3.4",
     "nodemailer": "^6.9.16",
-    "nuxt": "^3.14.159",
+    "nuxt": "^3.14.1592",
     "nuxt-toastify": "^1.0.0",
     "vue": "latest",
     "vue-router": "latest",
@@ -22,6 +23,7 @@
   },
   "packageManager": "yarn@1.22.22",
   "devDependencies": {
-    "@types/nodemailer": "^6.4.16"
+    "@types/nodemailer": "^6.4.16",
+    "typescript": "^5.7.2"
   }
 }

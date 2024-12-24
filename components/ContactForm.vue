@@ -1,7 +1,9 @@
 <script setup lang="ts">
+const { t } = useI18n();
+
 const submitForm = async (event: Event) => {
     event.preventDefault();
-    const loadingToast = useToastify.loading('Sending message...', {
+    const loadingToast = useToastify.loading(t('contact.sending'), {
         autoClose: false
     });
 
@@ -18,7 +20,7 @@ const submitForm = async (event: Event) => {
         if (err.data.statusCode !== 400) return null;
         useToastify.update(loadingToast, {
             type: 'error',
-            render: 'Please fill in all fields correctly.',
+            render: t('contact.errors.fields'),
             autoClose: true,
             closeOnClick: true,
             isLoading: false
@@ -27,7 +29,7 @@ const submitForm = async (event: Event) => {
     if (!res) {
         useToastify.update(loadingToast, {
             type: 'error',
-            render: 'An error occurred while sending the message. Please try again later.',
+            render: t('contact.errors.general'),
             autoClose: true,
             closeOnClick: true,
             isLoading: false
@@ -37,7 +39,7 @@ const submitForm = async (event: Event) => {
 
     useToastify.update(loadingToast, {
         type: 'success',
-        render: 'Message sent successfully!',
+        render: t('contact.success'),
         autoClose: true,
         closeOnClick: true,
         isLoading: false
@@ -64,17 +66,17 @@ const resize = (event: Event) => {
 <template>
     <form @input="validateForm" @submit.prevent="submitForm" class="contact-form">
         <div class="form-field">
-            <label for="name">Name</label>
+            <label for="name">{{ $t('nameLabel') }}</label>
             <input placeholder="Adam Billard" type="text" id="name" name="name" required min="2" max="50" />
         </div>
         <div class="form-field">
-            <label for="email">Email</label>
+            <label for="email">{{ $t('emailLabel') }}</label>
             <input placeholder="user@example.com" type="email" id="email" name="email" required max="50" />
         </div>
         <div class="form-field">
-            <label for="message">Message</label>
+            <label for="message">{{ $t('messageLabel') }}</label>
             <textarea @input="resize" placeholder="Hello, .." id="message" name="message" required minlength="10" maxlength="1500"></textarea>
         </div>
-        <button class="btn btn-secondary" type="submit">Send</button>
+        <button class="btn btn-secondary" type="submit">{{ $t('send') }}</button>
     </form>
 </template>

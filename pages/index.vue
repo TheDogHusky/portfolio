@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { t } = useI18n();
+
 useHead({
     title: 'Adam Billard, full-stack developer'
 });
@@ -6,7 +8,7 @@ useHead({
 const projects = [
     {
         name: 'Portfolio',
-        description: 'My personal portfolio, made with Nuxt.js and Tailwind CSS.',
+        description: t('projects.portfolioDescription'),
         links: [
             {
                 name: 'GitHub',
@@ -14,7 +16,7 @@ const projects = [
                 icon: 'nf-fa-github'
             },
             {
-                name: 'Visit',
+                name: t('visit'),
                 url: 'https://classydev.fr',
                 icon: 'nf-fa-external_link'
             }
@@ -22,7 +24,7 @@ const projects = [
     },
     {
         name: "NekoNya",
-        description: "An anime-themed website with a few functionalities such as a public API.",
+        description: t('projects.nekonyaDescription'),
         links: [
             {
                 name: 'GitHub',
@@ -30,7 +32,7 @@ const projects = [
                 icon: 'nf-fa-github'
             },
             {
-                name: 'Visit',
+                name: t('visit'),
                 url: 'https://nekonya.classydev.fr',
                 icon: 'nf-fa-external_link'
             }
@@ -38,10 +40,10 @@ const projects = [
     },
     {
         name: 'Hestia',
-        description: 'A Discord community that I made a website for.',
+        description: t('projects.hestiaDescription'),
         links: [
             {
-                name: 'Visit',
+                name: t('visit'),
                 url: 'https://project-hestia.me',
                 icon: 'nf-fa-external_link'
             }
@@ -49,10 +51,10 @@ const projects = [
     },
     {
         name: 'nathanpradel.fr',
-        description: 'A website for a friend of mine, to showcase his photographic work.',
+        description: t('projects.nathanDescription'),
         links: [
             {
-                name: 'Visit',
+                name: t('visit'),
                 url: 'https://nathanpradel.fr',
                 icon: 'nf-fa-external_link'
             }
@@ -65,21 +67,29 @@ const projects = [
     <main class="container child-extend px-4" id="home">
         <NuxtImg data-aos="fade-down" alt="logo" format="webp" src="/logo.webp" height="720" width="720" class="main-logo" />
         <div class="main-header">
-            <h1 data-aos="fade-right" class="title">Hey, I'm <span class="title-special">Adam</span>.</h1>
+            <i18n-t scope="global" keypath="title" data-aos="fade-right" tag="h1" class="title">
+                <template v-slot:name><span class="title-special">Adam</span></template>
+            </i18n-t>
             <Socials data-aos="fade-up" place="header" />
         </div>
         <ScrollButton scrollTarget="about" />
     </main>
     <section id="about" class="container bg-darker gap-3 px-4">
-        <h2 data-aos="fade-left">About <span class="title-special">me</span></h2>
+        <i18n-t scope="global" keypath="aboutme.title" data-aos="fade-left" tag="h1" class="title">
+            <template v-slot:me><span class="title-special">{{ $t('me') }}</span></template>
+        </i18n-t>
         <p class="about-p" data-aos="fade-up">
-            I'm a full-stack 16 years old developer from France. I started coding when I was 13 with Java, then learned JavaScript with Codecademy, making a Discord Bot (<a href="https://github.com/TheDogHusky/huskybot" rel="noreferrer" target="_blank">HuskyBot</a>). <br/>
-            Then I started making websites with Express and EJS, and now I'm using Nuxt.js and Express. <br/>
-            I'm passionate about web development and I love to create beautiful and efficient websites.
+            <i18n-t scope="global" keypath="aboutme.about1" tag="span">
+                <template v-slot:huskybotLink><a href="https://github.com/TheDogHusky/huskybot" rel="noreferrer" target="_blank">HuskyBot</a></template>
+            </i18n-t> <br/>
+            {{ $t('aboutme.about2') }} <br/>
+            {{ $t('aboutme.about3') }}
         </p>
     </section>
     <section class="container gap-3 p-4" id="projects">
-        <h2 data-aos="fade-right">My <span class="title-special">projects</span></h2>
+        <i18n-t scope="global" keypath="projects.title" data-aos="fade-right" tag="h1" class="title">
+          <template v-slot:projects><span class="title-special">{{ $t('projectsLabel') }}</span></template>
+        </i18n-t>
         <ul class="projects">
             <li v-for="project in projects" :key="project.name" class="project" data-aos="fade-up">
                 <h3>{{ project.name }}</h3>
@@ -96,11 +106,15 @@ const projects = [
         </ul>
     </section>
     <section class="container gap-3 p-4 bg-darker" id="experience">
-        <h2 data-aos="fade-left">My <span class="title-special">experience</span></h2>
+        <i18n-t scope="global" keypath="experiences.title" data-aos="fade-left" tag="h1" class="title">
+          <template v-slot:experiences><span class="title-special">{{ $t('experiencesLabel') }}</span></template>
+        </i18n-t>
         <ExperienceResume />
     </section>
     <section class="container gap-3 p-4" id="contact">
-        <h2 data-aos="fade-right">Contact <span class="title-special">me</span></h2>
+        <i18n-t scope="global" keypath="contact.title" data-aos="fade-right" tag="h1" class="title">
+            <template v-slot:me><span class="title-special">{{ $t('contact.me') }}</span></template>
+        </i18n-t>
         <ContactForm data-aos="fade-right" />
     </section>
 </template>
