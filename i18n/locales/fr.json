@@ -1,0 +1,56 @@
+{
+  "title": "Hey, c'est {name}.",
+  "me": "moi",
+  "nameLabel": "Nom",
+  "emailLabel": "Email",
+  "messageLabel": "Message",
+  "projectsLabel": "projets",
+  "experiencesLabel": "expériences",
+  "send": "Envoyer",
+  "language": "Langue",
+  "visit": "Visiter",
+  "week": "aucunes semaines | une semaine | {count} semaines",
+  "home": "Accueil",
+  "about": "A propos",
+  "contactNav": "Contact",
+  "projectsNav": "Projets",
+  "experiencesNav": "Expériences",
+  "aboutme": {
+    "title": "A propos de {me}",
+    "about1": "Je suis un développeur full-stack français de 16 ans. J'ai commencé à développer à 13 ans avec Java avec Codecademy, puis ensuite JavaScript, en créant un bot Discord ({huskybotLink}) et encore avec Codecademy.",
+    "about2": "Ensuite, j'ai commencé à faire des sites avec Express et EJS, et j'utilise maintenant Nuxt et Express.",
+    "about3": "Je suis passionné du développement web et j'adore faire des sites web efficaces et magnifiques."
+  },
+  "projects": {
+    "title": "Mes {projects}",
+    "portfolioDescription": "Mon portfolio personnel, créé avec Nuxt.js.",
+    "nekonyaDescription": "Un site web sur le thème des animes avec quelques fonctionnalités comme une API publique.",
+    "hestiaDescription": "Une communauté Discord pour laquelle j'ai créé un site web.",
+    "nathanDescription": "Un site web pour un ami, pour exposer son travail photographique."
+  },
+  "experiences": {
+    "title": "Mes {experiences}",
+    "primarySchool": "Ecole primaire Paul-Emile-Victor",
+    "middleSchool": "Collège Martin-Luther-King",
+    "highSchool": "Lycée général Simone-Veil",
+    "internships": {
+      "orange": "Stage chez Orange Business Services",
+      "duros": "Stage chez Duros Musique"
+    }
+  },
+  "contact": {
+    "title": "{me} contacter",
+    "me": "Me",
+    "contact": "Contact",
+    "success": "Message envoyé avec succès!",
+    "errors": {
+      "general": "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer plus tard.",
+      "fields": "Veuillez remplir correctement tous les champs."
+    },
+    "sending": "Envoi du message..."
+  },
+  "footer": {
+    "left": "© 2024 Adam Billard, tout droits réservés.",
+    "right": "Site web créé avec ❤\uFE0F par Adam Billard."
+  }
+}

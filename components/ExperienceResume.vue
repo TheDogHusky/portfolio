@@ -1,25 +1,24 @@
 <template>
-    <!-- TODO fix the fact that when the animation is not done yet (aos), the container is too big and overflows on the x axis -->
     <div class="experience-resume">
         <div data-aos="fade-right" class="experience">
-            <h3>Paul-Emile-Victor primary school</h3>
+            <h3>{{ $t('experiences.primarySchool') }}</h3>
             <p>2011 - 2017</p>
         </div>
         <div data-aos="fade-left" class="experience">
-            <h3>Martin-Luther-King middle school</h3>
+            <h3>{{ $t('experiences.middleSchool') }}</h3>
             <p>2017 - 2021</p>
         </div>
         <div data-aos="fade-right" class="sub-experience">
-            <h3>Internship at Orange Business Services</h3>
-            <p>1 week</p>
+            <h3>{{ $t('experiences.internships.orange') }}</h3>
+            <p>{{ $t('week', 1) }}</p>
         </div>
         <div data-aos="fade-left" class="experience">
-            <h3>Simone-Veil general high school</h3>
-            <p>2021 - 2024</p>
+            <h3>{{ $t('experiences.highSchool') }}</h3>
+            <p>2021 - now</p>
         </div>
         <div data-aos="fade-right" class="sub-experience">
-            <h3>Internship at Duros Musique</h3>
-            <p>2 weeks</p>
+            <h3>{{ $t('experiences.internships.duros') }}</h3>
+            <p>{{ $t('week', 2) }}</p>
         </div>
     </div>
 </template>
