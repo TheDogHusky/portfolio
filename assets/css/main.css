@@ -1156,6 +1156,10 @@ input:-webkit-autofill:active {
     color: var(--primary);
 }
 
+.dropdown-item:before {
+    display: none;
+}
+
 .dropdown-item:hover {
     background-color: var(--black-light);
 }
