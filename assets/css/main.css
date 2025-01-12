@@ -106,7 +106,7 @@ a:hover {
 a:before {
     content: '';
     position: absolute;
-    bottom: -0.5rem;
+    bottom: -0.25rem;
     left: 0;
     width: 100%;
     height: 3px;
@@ -115,7 +115,7 @@ a:before {
 }
 
 a:hover:before {
-    bottom: -.25rem;
+    bottom: 0;
 }
 
 /* Utilities */
@@ -601,7 +601,7 @@ a:hover:before {
 .title-special:before {
     content: '';
     position: absolute;
-    bottom: -0.5rem;
+    bottom: -0.25rem;
     left: 0;
     width: 100%;
     height: 3px;
@@ -614,7 +614,7 @@ a:hover:before {
 }
 
 .title-special:hover:before {
-    bottom: -.25rem;
+    bottom: 0;
 }
 
 .about-p {
@@ -636,6 +636,14 @@ a:hover:before {
 
 .socials a {
     font-size: 1.5rem;
+}
+
+.socials a:before {
+    bottom: -.5rem;
+}
+
+.socials a:hover:before {
+    bottom: -.25rem;
 }
 
 .socials-header a {
@@ -1091,6 +1099,10 @@ input:-webkit-autofill:active {
 
 .navbar-items a:hover {
     color: var(--primary);
+}
+
+.navbar-items > a:before {
+    display: none;
 }
 
 .dropdown {
