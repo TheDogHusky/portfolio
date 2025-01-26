@@ -690,6 +690,9 @@ a:hover:before {
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+.project > p {
+    height: 100%;
+}
 
 .project:hover {
     box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
