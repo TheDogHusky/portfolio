@@ -10,6 +10,7 @@
   "visit": "Visit",
   "week": "no weeks | one week | {count} weeks",
   "home": "Home",
+  "now": "now",
   "about": "About",
   "contactNav": "Contact",
   "projectsNav": "Projects",
@@ -17,13 +18,14 @@
   "language": "Language",
   "aboutme": {
     "title": "About {me}",
-    "about1": "I'm a full-stack 16 years old developer from France. I started coding when I was 13 with Java through with Codecademy, then learned JavaScript, by making a Discord Bot ({huskybotLink}) and by using Codecademy again.",
+    "about1": "I'm a full-stack 16 years old developer from France. I started coding when I was 13 with Java through Codecademy, then learned JavaScript, by making a Discord Bot ({huskybotLink}) and by using Codecademy again.",
     "about2": "Then I started making websites with Express and EJS, and now I'm using Nuxt and Express.",
     "about3": "I'm passionate about web development and I love to create beautiful and efficient websites."
   },
   "projects": {
     "title": "My {projects}",
     "portfolioDescription": "My personal portfolio, made with Nuxt.js.",
+    "musicDescription": "A music website I've originally made with React to showcase my musical work, that I'm currently remaking with Nuxt.",
     "nekonyaDescription": "An anime-themed website with a few functionalities such as a public API.",
     "hestiaDescription": "A Discord community that I made a website for.",
     "nathanDescription": "A website for a friend of mine, to showcase his photographic work."

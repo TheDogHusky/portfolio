@@ -11,22 +11,24 @@
   "visit": "Visiter",
   "week": "aucunes semaines | une semaine | {count} semaines",
   "home": "Accueil",
+  "now": "maintenant",
   "about": "A propos",
   "contactNav": "Contact",
   "projectsNav": "Projets",
   "experiencesNav": "Expériences",
   "aboutme": {
     "title": "A propos de {me}",
-    "about1": "Je suis un développeur full-stack français de 16 ans. J'ai commencé à développer à 13 ans avec Java avec Codecademy, puis ensuite JavaScript, en créant un bot Discord ({huskybotLink}) et encore avec Codecademy.",
+    "about1": "Je suis un développeur full-stack français de 16 ans. J'ai commencé à développer à 13 ans avec Java via Codecademy, puis ensuite JavaScript, en créant un bot Discord ({huskybotLink}) et ensuite de nouveau avec Codecademy.",
     "about2": "Ensuite, j'ai commencé à faire des sites avec Express et EJS, et j'utilise maintenant Nuxt et Express.",
     "about3": "Je suis passionné du développement web et j'adore faire des sites web efficaces et magnifiques."
   },
   "projects": {
     "title": "Mes {projects}",
     "portfolioDescription": "Mon portfolio personnel, créé avec Nuxt.js.",
+    "musicDescription": "Un site web que j'ai initialement créé avec React pour exposer mon travail musical, mais que je suis en train de refaire avec Nuxt.",
     "nekonyaDescription": "Un site web sur le thème des animes avec quelques fonctionnalités comme une API publique.",
     "hestiaDescription": "Une communauté Discord pour laquelle j'ai créé un site web.",
-    "nathanDescription": "Un site web pour un ami, pour exposer son travail photographique."
+    "nathanDescription": "Un site web pour un ami, afin exposer son travail photographique."
   },
   "experiences": {
     "title": "Mes {experiences}",

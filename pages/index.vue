@@ -23,6 +23,22 @@ const projects = [
         ]
     },
     {
+        name: 'Music Portfolio',
+        description: t('projects.musicDescription'),
+        links: [
+            {
+                name: 'GitHub',
+                url: 'https://github.com/TheDogHusky/TheDogHusky.github.io',
+                icon: 'nf-fa-github'
+            },
+            {
+                name: t('visit'),
+                url: 'https://music.classydev.fr',
+                icon: 'nf-fa-external_link'
+            }
+        ]
+    },
+    {
         name: "NekoNya",
         description: t('projects.nekonyaDescription'),
         links: [
