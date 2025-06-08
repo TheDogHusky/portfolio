@@ -25,7 +25,7 @@
   "projects": {
     "title": "Mes {projects}",
     "portfolioDescription": "Mon portfolio personnel, créé avec Nuxt.js.",
-    "musicDescription": "Un site web que j'ai initialement créé avec React pour exposer mon travail musical, mais que je suis en train de refaire avec Nuxt.",
+    "musicDescription": "Mon site pour ma carrière musicale, refait avec Nuxt.js.",
     "nekonyaDescription": "Un site web sur le thème des animes avec quelques fonctionnalités comme une API publique.",
     "hestiaDescription": "Une communauté Discord pour laquelle j'ai créé un site web.",
     "nathanDescription": "Un site web pour un ami, afin exposer son travail photographique."
