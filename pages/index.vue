@@ -28,7 +28,7 @@ const projects = [
         links: [
             {
                 name: 'GitHub',
-                url: 'https://github.com/TheDogHusky/TheDogHusky.github.io',
+                url: 'https://github.com/TheDogHusky/music',
                 icon: 'nf-fa-github'
             },
             {
