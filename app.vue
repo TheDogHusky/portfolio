@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+const runtimeConfig = useRuntimeConfig();
+
 onMounted(() => {
     useNuxtApp().$aos().init();
     window.onresize = function () {
@@ -12,9 +14,18 @@ useHead({
     },
     script: [
         {
-            src: "https://plausible.classydev.fr/js/script.js",
+            src: runtimeConfig.public.plausibleUrl + "/js/script.js",
             defer: true,
             "data-domain": "classydev.fr"
+        },
+        {
+            src: runtimeConfig.public.mosparoUrl + "/build/mosparo-frontend.js"
+        }
+    ],
+    link: [
+        {
+            rel: "stylesheet",
+            href: runtimeConfig.public.mosparoUrl + "/resources/" + runtimeConfig.public.mosparoProjectId + ".css"
         }
     ]
 });

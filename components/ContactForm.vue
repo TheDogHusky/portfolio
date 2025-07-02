@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n();
+const $t = t;
 
 const submitForm = async (event: Event) => {
     event.preventDefault();
@@ -77,6 +78,9 @@ const resize = (event: Event) => {
             <label for="message">{{ $t('messageLabel') }}</label>
             <textarea @input="resize" placeholder="Hello, .." id="message" name="message" required minlength="10" maxlength="1500"></textarea>
         </div>
+        <ClientOnly>
+            <Mosparo />
+        </ClientOnly>
         <button class="btn btn-secondary" type="submit">{{ $t('send') }}</button>
     </form>
 </template>
