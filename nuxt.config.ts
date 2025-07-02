@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         mailUser: process.env.NUXT_MAIL_USER ?? '',
         mailPassword: process.env.NUXT_MAIL_PASSWORD ?? '',
+        mailHost: process.env.NUXT_MAIL_HOST ?? '',
         mosparoPrivateKey: process.env.NUXT_MOSPARO_PRIVATE_KEY ?? '',
         public: {
             plausibleUrl: process.env.NUXT_PUBLIC_PLAUSIBLE_URL ?? '',

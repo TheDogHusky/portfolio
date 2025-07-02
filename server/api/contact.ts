@@ -1,13 +1,14 @@
 import { createTransport } from 'nodemailer';
 import { z } from 'zod';
 import xss from 'xss';
+import { Client } from '@mosparo/api-client';
 
 const config = useRuntimeConfig();
 
 const transporter = createTransport({
     // For some reason, host field gives an error in TypeScript, even though it is the right syntax
     // @ts-ignore
-    host: 'mail.classydev.fr',
+    host: config.mailHost,
     port: 587,
     secureConnection: true,
     auth: {
@@ -15,6 +16,9 @@ const transporter = createTransport({
         pass: config.mailPassword
     }
 });
+
+console.log(config)
+const client = new Client(config.public.mosparoUrl, config.public.mosparoPublicKey, config.mosparoPrivateKey, {});
 
 const ContactSchema = z.object({
     name: z.string({ message: 'The name field must be a string' }).min(2, 'The name field must contain at least 2 characters').max(50, 'The name field must contain at most 50 characters'),
@@ -27,6 +31,18 @@ export default defineEventHandler(async (event) => {
         throw createError({
             statusText: 'Method Not Allowed',
             statusCode: 405
+        });
+    }
+
+    const unsafeBody = await readBody(event);
+    const mosparoSubmitToken = unsafeBody._mosparo_submitToken;
+    const mosparoValidationToken = unsafeBody._mosparo_validationToken;
+
+    const mosparoResult = await client.verifySubmission(unsafeBody, mosparoSubmitToken, mosparoValidationToken);
+    if (!mosparoResult.isSubmittable()) {
+        throw createError({
+            statusText: 'Invalid submission',
+            statusCode: 400
         });
     }
 
