@@ -7,6 +7,15 @@ export default defineNuxtConfig({
     plugins: [
         { src: '~/plugins/aos.client', mode: 'client' }
     ],
+    vite: {
+        server: {
+            allowedHosts: [
+                'localhost',
+                'dev.classydev.fr',
+                'classydev.fr'
+            ]
+        }
+    },
     runtimeConfig: {
         mailUser: process.env.NUXT_MAIL_USER ?? '',
         mailPassword: process.env.NUXT_MAIL_PASSWORD ?? '',

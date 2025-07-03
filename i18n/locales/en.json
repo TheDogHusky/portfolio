@@ -47,7 +47,8 @@
     "success": "Message sent successfully!",
     "errors": {
       "general": "An error occurred while sending the message. Please try again later.",
-      "fields": "Please fill in all fields correctly."
+      "fields": "Please fill in all fields correctly.",
+      "mosparo": "You did not pass the security check. Please try again in a few seconds."
     },
     "sending": "Sending message..."
   },

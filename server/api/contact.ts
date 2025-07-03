@@ -17,7 +17,6 @@ const transporter = createTransport({
     }
 });
 
-console.log(config)
 const client = new Client(config.public.mosparoUrl, config.public.mosparoPublicKey, config.mosparoPrivateKey, {});
 
 const ContactSchema = z.object({

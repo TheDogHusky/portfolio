@@ -19,6 +19,18 @@ const submitForm = async (event: Event) => {
         body: JSON.stringify(data)
     }).catch((err) => {
         if (err.data.statusCode !== 400) return null;
+
+        if (err.data.statusText === 'Invalid submission') {
+            useToastify.update(loadingToast, {
+                type: 'error',
+                render: t('contact.errors.mosparo'),
+                autoClose: true,
+                closeOnClick: true,
+                isLoading: false
+            });
+            return null;
+        }
+
         useToastify.update(loadingToast, {
             type: 'error',
             render: t('contact.errors.fields'),
@@ -27,6 +39,7 @@ const submitForm = async (event: Event) => {
             isLoading: false
         });
     });
+
     if (!res) {
         useToastify.update(loadingToast, {
             type: 'error',
