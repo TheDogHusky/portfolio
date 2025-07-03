@@ -8,9 +8,7 @@ const config = useRuntimeConfig();
 const transporter = createTransport({
     // For some reason, host field gives an error in TypeScript, even though it is the right syntax
     // @ts-ignore
-    host: config.mailHost,
-    port: 587,
-    secureConnection: true,
+    service: 'gmail',
     auth: {
         user: config.mailUser,
         pass: config.mailPassword
@@ -57,7 +55,7 @@ export default defineEventHandler(async (event) => {
     await transporter.sendMail({
         from: {
             name: email,
-            address: config.mailUser
+            address: 'no-reply@classydev.fr'
         },
         to: 'contact@classydev.fr',
         subject: `[Contact Form] New message from ${name}`,
