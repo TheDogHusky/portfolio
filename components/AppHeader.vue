@@ -30,7 +30,7 @@ onUnmounted(() => {
     <header>
         <nav :class="navbarClass">
             <div class="navbar-brand">
-                <NuxtImg alt="logo" src="/logo.webp" width="40" height="40" />
+                <NuxtImg placeholder alt="logo" src="/logo.webp" width="40" height="40" />
                 <h1 class="title-special">Adam Billard</h1>
             </div>
             <div @click="toggleState" :class="navButtonClasses">

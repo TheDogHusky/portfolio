@@ -92,7 +92,7 @@ const projects = [
 
 <template>
     <main class="container child-extend px-4" id="home">
-        <NuxtImg data-aos="fade-down" alt="logo" format="webp" src="/logo.webp" height="720" width="720" class="main-logo" />
+        <NuxtImg data-aos="fade-down" alt="logo" format="webp" src="/logo.webp" height="720" width="720" class="main-logo" placeholder />
         <div class="main-header">
             <i18n-t scope="global" keypath="title" data-aos="fade-right" tag="h1" class="title">
                 <template v-slot:name><span class="title-special">Adam</span></template>
