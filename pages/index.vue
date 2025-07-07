@@ -39,18 +39,29 @@ const projects = [
         ]
     },
     {
-        name: "NekoNya",
-        description: t('projects.nekonyaDescription'),
+        name: "Home-Clock",
+        description: t('projects.homeclockDescription'),
         links: [
             {
                 name: 'GitHub',
-                url: 'https://github.com/NekoNyaDevs',
+                url: 'https://github.com/TheDogHusky/home-clock',
                 icon: 'nf-fa-github'
             },
             {
                 name: t('visit'),
-                url: 'https://nekonya.classydev.fr',
+                url: 'https://clock.classydev.fr',
                 icon: 'nf-fa-external_link'
+            }
+        ]
+    },
+    {
+        name: "Docker-Watch",
+        description: t('projects.dockerwatchDescription'),
+        links: [
+            {
+                name: 'GitHub',
+                url: 'https://github.com/TheDogHusky/docker-watch',
+                icon: 'nf-fa-github'
             }
         ]
     },

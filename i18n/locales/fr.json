@@ -26,13 +26,13 @@
     "title": "Mes {projects}",
     "portfolioDescription": "Mon portfolio personnel, créé avec Nuxt.js.",
     "musicDescription": "Mon site pour ma carrière musicale, refait avec Nuxt.js.",
-    "nekonyaDescription": "Un site web sur le thème des animes avec quelques fonctionnalités comme une API publique.",
+    "homeclockDescription": "Une horloge web simple, minimaliste, axée sur la concentration, pour les personnes ayant des troubles de l'attention.",
+    "dockerwatchDescription": "Un conteneur Docker et un outil en ligne de commande pour surveiller les événements Docker et exécuter une commande lorsqu'un événement se produit.",
     "hestiaDescription": "Une communauté Discord pour laquelle j'ai créé un site web.",
     "nathanDescription": "Un site web pour un ami, afin exposer son travail photographique."
   },
   "experiences": {
     "title": "Mes {experiences}",
-    "primarySchool": "Ecole primaire Paul-Emile-Victor",
     "middleSchool": "Collège Martin-Luther-King",
     "highSchool": "Lycée général Simone-Veil",
     "internships": {
