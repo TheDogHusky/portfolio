@@ -99,10 +99,10 @@ const projects = [
             </i18n-t>
             <Socials data-aos="fade-up" place="header" />
         </div>
-        <ScrollButton scrollTarget="about" />
+        <ScrollButton scrollTarget="about" aria-label="scroll to the about section" />
     </main>
-    <section id="about" class="container bg-darker gap-3 px-4">
-        <i18n-t scope="global" keypath="aboutme.title" data-aos="fade-left" tag="h1" class="title">
+    <section role="region" aria-label="about" id="about" class="container bg-darker gap-3 px-4">
+        <i18n-t scope="global" keypath="aboutme.title" data-aos="fade-left" tag="h2" class="title">
             <template v-slot:me><span class="title-special">{{ $t('me') }}</span></template>
         </i18n-t>
         <p class="about-p" data-aos="fade-up">
@@ -113,8 +113,8 @@ const projects = [
             {{ $t('aboutme.about3') }}
         </p>
     </section>
-    <section class="container gap-3 p-4" id="projects">
-        <i18n-t scope="global" keypath="projects.title" data-aos="fade-right" tag="h1" class="title">
+    <section aria-label="projects" role="region" class="container gap-3 p-4" id="projects">
+        <i18n-t scope="global" keypath="projects.title" data-aos="fade-right" tag="h2" class="title">
           <template v-slot:projects><span class="title-special">{{ $t('projectsLabel') }}</span></template>
         </i18n-t>
         <ul class="projects">
@@ -132,14 +132,14 @@ const projects = [
             </li>
         </ul>
     </section>
-    <section class="container gap-3 p-4 bg-darker" id="experience">
-        <i18n-t scope="global" keypath="experiences.title" data-aos="fade-left" tag="h1" class="title">
+    <section aria-label="experience" role="region" class="container gap-3 p-4 bg-darker" id="experience">
+        <i18n-t scope="global" keypath="experiences.title" data-aos="fade-left" tag="h2" class="title">
           <template v-slot:experiences><span class="title-special">{{ $t('experiencesLabel') }}</span></template>
         </i18n-t>
         <ExperienceResume />
     </section>
-    <section class="container gap-3 p-4" id="contact">
-        <i18n-t scope="global" keypath="contact.title" data-aos="fade-right" tag="h1" class="title">
+    <section aria-label="contact" role="region" class="container gap-3 p-4" id="contact">
+        <i18n-t scope="global" keypath="contact.title" data-aos="fade-right" tag="h2" class="title">
             <template v-slot:me><span class="title-special">{{ $t('contact.me') }}</span></template>
         </i18n-t>
         <ContactForm data-aos="fade-right" />

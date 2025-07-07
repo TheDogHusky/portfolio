@@ -38,7 +38,7 @@ const classes = computed(() => {
 
 <template>
     <div :class="classes">
-        <a v-for="social in socials" :key="social.name" :href="social.url" target="_blank" rel="noopener noreferrer">
+        <a v-for="social in socials" :key="social.name" :href="social.url" target="_blank" rel="noopener noreferrer" aria-label="social.name">
            <Icon :name="social.icon" />
         </a>
     </div>

@@ -6,6 +6,12 @@ onMounted(() => {
     window.onresize = function () {
         useNuxtApp().$aos().refresh();
     }
+
+    // Accessibility: Set the lang attribute on the html tag
+    const htmlTag = document.querySelector('html');
+    if (htmlTag) {
+        htmlTag.setAttribute('lang', useI18n().locale.value || 'en');
+    }
 });
 
 useHead({

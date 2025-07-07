@@ -1,5 +1,5 @@
 <template>
-    <footer data-aos="fade-up" data-aos-anchor="#contact" data-aos-anchor-placement="top-center">
+    <footer role="contentinfo" data-aos="fade-up" data-aos-anchor="#contact" data-aos-anchor-placement="top-center">
         <div class="footer-texts">
             <p>{{ $t('footer.left') }}</p>
             <p>{{ $t('footer.right') }}</p>
