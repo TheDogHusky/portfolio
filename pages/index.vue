@@ -66,12 +66,12 @@ const projects = [
         ]
     },
     {
-        name: 'Hestia',
-        description: t('projects.hestiaDescription'),
+        name: 'vanillyneko.com',
+        description: t('projects.vanillyDescription'),
         links: [
             {
                 name: t('visit'),
-                url: 'https://project-hestia.me',
+                url: 'https://www.vanillyneko.com',
                 icon: 'nf-fa-external_link'
             }
         ]

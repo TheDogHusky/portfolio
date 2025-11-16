@@ -28,7 +28,7 @@
     "musicDescription": "My website for my music career, rewrote with Nuxt.js.",
     "homeclockDescription": "A focus-driven, minimalist, and simple clock app, for people with attention deficit.",
     "dockerwatchDescription": "A docker container and cli tool to watch for docker events and execute a command when an event occurs.",
-    "hestiaDescription": "A Discord community that I made a website for.",
+    "vanillyDescription": "The website for the streamer VanillyNeko, made with Nuxt.js.",
     "nathanDescription": "A website for a friend of mine, to showcase his photographic work."
   },
   "experiences": {
