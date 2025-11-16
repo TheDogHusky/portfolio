@@ -74,7 +74,8 @@ export default defineNuxtConfig({
                 'img-src': ["'self'", 'https://plausible.classydev.fr', 'https://mosparo.classydev.fr'],
                 'connect-src': ["'self'", 'https://plausible.classydev.fr', 'https://mosparo.classydev.fr'],
                 'font-src': ["'self'", 'https://fonts.gstatic.com'],
-                'frame-src': ['https://plausible.classydev.fr']
+                'frame-src': ['https://plausible.classydev.fr'],
+                'worker-src': ["'self'"]
             },
         }
     }
