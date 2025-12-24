@@ -18,7 +18,7 @@
   "experiencesNav": "Expériences",
   "aboutme": {
     "title": "A propos de {me}",
-    "about1": "Je suis un développeur full-stack français de 16 ans. J'ai commencé à développer à 13 ans avec Java via Codecademy, puis ensuite JavaScript, en créant un bot Discord ({huskybotLink}) et ensuite de nouveau avec Codecademy.",
+    "about1": "Je suis un développeur full-stack français de 17 ans. J'ai commencé à développer à 13 ans avec Java via Codecademy, puis ensuite JavaScript, en créant un bot Discord ({huskybotLink}) et ensuite de nouveau avec Codecademy.",
     "about2": "Ensuite, j'ai commencé à faire des sites avec Express et EJS, et j'utilise maintenant Nuxt et Express.",
     "about3": "Je suis passionné du développement web et j'adore faire des sites web efficaces et magnifiques."
   },
