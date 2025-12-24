@@ -18,7 +18,7 @@
   "language": "Language",
   "aboutme": {
     "title": "About {me}",
-    "about1": "I'm a full-stack 16 years old developer from France. I started coding when I was 13 with Java through Codecademy, then learned JavaScript, by making a Discord Bot ({huskybotLink}) and by using Codecademy again.",
+    "about1": "I'm a full-stack 17 years old developer from France. I started coding when I was 13 with Java through Codecademy, then learned JavaScript, by making a Discord Bot ({huskybotLink}) and by using Codecademy again.",
     "about2": "Then I started making websites with Express and EJS, and now I'm using Nuxt and Express.",
     "about3": "I'm passionate about web development and I love to create beautiful and efficient websites."
   },
