@@ -88,6 +88,17 @@ const projects = [
         ]
     }
 ];
+
+const age = computed(() => {
+    const birthDate = new Date('2008-09-09');
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+});
 </script>
 
 <template>
@@ -107,6 +118,7 @@ const projects = [
         </i18n-t>
         <p class="about-p" data-aos="fade-up">
             <i18n-t scope="global" keypath="aboutme.about1" tag="span">
+                <template v-slot:age>{{ age }}</template>
                 <template v-slot:huskybotLink><a href="https://github.com/TheDogHusky/huskybot" rel="noreferrer" target="_blank">HuskyBot</a></template>
             </i18n-t> <br/>
             {{ $t('aboutme.about2') }} <br/>

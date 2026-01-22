@@ -14,7 +14,7 @@
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/i18n": "^10.2.0",
     "aos": "^2.3.4",
-    "nodemailer": "^6.9.16",
+    "nodemailer": "^7.0.12",
     "nuxt": "3.20.1",
     "nuxt-security": "2.2.0",
     "nuxt-toastify": "^1.0.0",
