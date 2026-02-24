@@ -64,6 +64,7 @@ export default defineNuxtConfig({
                 'https://plausible.classydev.fr'
             ]
         },
+        rateLimiter: false,
         headers: {
             crossOriginResourcePolicy: 'cross-origin',
             contentSecurityPolicy: {
