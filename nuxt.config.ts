@@ -14,6 +14,11 @@ export default defineNuxtConfig({
                 'dev.classydev.fr',
                 'classydev.fr'
             ]
+        },
+        optimizeDeps: {
+            include: [
+                'aos',
+            ]
         }
     },
     runtimeConfig: {
@@ -51,7 +56,9 @@ export default defineNuxtConfig({
         lazy: true,
         langDir: 'locales',
         strategy: 'prefix',
-        vueI18n: './i18n.config.ts'
+        bundle: {
+            optimizeTranslationDirective: false
+        }
     },
     security: {
         corsHandler: {
