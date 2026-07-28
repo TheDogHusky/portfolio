@@ -53,7 +53,7 @@
     "sending": "Sending message..."
   },
   "footer": {
-    "left": "© 2024 Adam Billard, all rights reserved.",
+    "left": "© {year} Adam Billard, all rights reserved.",
     "right": "Website made with ❤\uFE0F by Adam Billard."
   }
 }

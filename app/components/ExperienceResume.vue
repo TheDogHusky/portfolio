@@ -10,7 +10,7 @@
         </div>
         <div data-aos="fade-right" class="experience">
             <h3>{{ $t('experiences.highSchool') }}</h3>
-            <p>2021 - {{ $t('now') }}</p>
+            <p>2021 - 2026</p>
         </div>
         <div data-aos="fade-left" class="sub-experience">
             <h3>{{ $t('experiences.internships.duros') }}</h3>
