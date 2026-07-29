@@ -1,7 +1,10 @@
 <script lang="ts" setup>
 const runtimeConfig = useRuntimeConfig();
+const { applyTheme, currentColor } = useTheme();
 
 onMounted(() => {
+    applyTheme(currentColor.value);
+
     useNuxtApp().$aos().init();
     window.onresize = function () {
         useNuxtApp().$aos().refresh();

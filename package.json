@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@material/material-color-utilities": "^0.4.0",
     "@mosparo/api-client": "^2.0.0",
     "@nuxt/image": "^2.0.0",
     "@nuxtjs/i18n": "^10.5.0",
