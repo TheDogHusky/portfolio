@@ -1033,7 +1033,7 @@ input:-webkit-autofill:active {
 
 .navbar-items.active {
     height: auto;
-    max-height: 16rem;
+    max-height: 20rem;
 }
 
 .navbar-items > a {
