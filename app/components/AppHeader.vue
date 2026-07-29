@@ -45,6 +45,7 @@ onUnmounted(() => {
                 <NuxtLink to="#experience">{{ $t('experiencesNav') }}</NuxtLink>
                 <NuxtLink to="#contact">{{ $t('contactNav') }}</NuxtLink>
                 <LanguageDropdown />
+                <ColorPicker />
             </div>
         </nav>
     </header>
