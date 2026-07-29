@@ -7,6 +7,9 @@ export default defineNuxtConfig({
     plugins: [
         { src: '~/plugins/aos.client', mode: 'client' }
     ],
+    build: {
+        transpile: ['@material/material-color-utilities'],
+    },
     vite: {
         server: {
             allowedHosts: [
@@ -18,6 +21,7 @@ export default defineNuxtConfig({
         optimizeDeps: {
             include: [
                 'aos',
+                '@material/material-color-utilities'
             ]
         }
     },
