@@ -70,9 +70,9 @@ const projects = [
         description: t('projects.hestiaDescription'),
         links: [
             {
-                name: t('visit'),
-                url: 'https://project-hestia.me',
-                icon: 'nf-fa-external_link'
+                name: t('githubArchive'),
+                url: 'https://github.com/TheDogHusky/hestia-website',
+                icon: 'nf-fa-github'
             }
         ]
     },
@@ -84,6 +84,22 @@ const projects = [
                 name: t('visit'),
                 url: 'https://nathanpradel.fr',
                 icon: 'nf-fa-external_link'
+            }
+        ]
+    },
+    {
+        name: 'vanillyneko.com',
+        description: t('projects.nillyDescription'),
+        links: [
+            {
+                name: t('visit'),
+                url: 'https://vanillyneko.com',
+                icon: 'nf-fa-external_link'
+            },
+            {
+                name: 'GitHub',
+                url: 'https://github.com/TheDogHusky/vanillyneko.com',
+                icon: 'nf-fa-github'
             }
         ]
     }

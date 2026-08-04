@@ -6,6 +6,7 @@
   "messageLabel": "Message",
   "projectsLabel": "projects",
   "experiencesLabel": "experiences",
+  "githubArchive": "GitHub Archive",
   "send": "Send",
   "visit": "Visit",
   "week": "no weeks | one week | {count} weeks",
@@ -29,7 +30,8 @@
     "homeclockDescription": "A focus-driven, minimalist, and simple clock app, for people with attention deficit.",
     "dockerwatchDescription": "A docker container and cli tool to watch for docker events and execute a command when an event occurs.",
     "hestiaDescription": "A Discord community that I made a website for.",
-    "nathanDescription": "A website for a friend of mine, to showcase his photographic work."
+    "nathanDescription": "A website for a friend of mine, to showcase his photographic work.",
+    "nillyDescription": "A website for a streamer, to showcase her work and socials."
   },
   "experiences": {
     "title": "My {experiences}",
